@@ -1,4 +1,3 @@
-
 import 'package:ejercicio_clase/config/router/router.dart';
 import 'package:ejercicio_clase/config/theme/app_theme.dart';
 import 'package:flutter/material.dart';
@@ -15,7 +14,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp.router(
       routerConfig: router,
       debugShowCheckedModeBanner: false,
-      theme: AppTheme(selectColor: 1).getThemeData(),
-      );
+      theme: AppTheme(selectColor: 3).getThemeData(),
+    );
   }
 }

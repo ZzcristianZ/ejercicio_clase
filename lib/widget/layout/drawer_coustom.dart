@@ -11,15 +11,21 @@ class DrawerCoustom extends StatelessWidget {
       child: ListView(
         children: [
           ...routerConfig.map((route) {
-            return (ListTile(
+            return ListTile(
               title: Text(route.title),
               subtitle: Text(route.description),
-              trailing: Icon(Icons.abc_rounded),
+              trailing: const Icon(Icons.keyboard_arrow_right_rounded),
+
               onTap: () {
-                Navigator.pop(context);
+                Navigator.pop(context); 
+
+                if (Navigator.canPop(context)) {
+                  Navigator.pop(context); 
+                }
+
                 context.go(route.patch);
               },
-            ));
+            );
           }),
         ],
       ),

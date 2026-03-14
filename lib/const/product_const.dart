@@ -1,3 +1,3 @@
-const url = 'https://dragonball-api.com/api';
-const productConst = '$url/characters';
+const url = "https://rickandmortyapi.com/api";
+const productConst = '$url/character';
 
