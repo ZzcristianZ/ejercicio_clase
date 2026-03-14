@@ -7,6 +7,7 @@ class CharacterService {
 
   Future<List<ProductModel>> getProduct() async {
     final response = await _dio.get(productConst);
+
     if (response.statusCode == 200) {
 
       final Map<String, dynamic> data = response.data;
@@ -14,22 +15,8 @@ class CharacterService {
       final List listData = data["results"];
 
       return listData.map((e) => ProductModel.fromJson(e)).toList();
-      final data = response.data;
-      final List list = data["items"];   
-      return list.map((e) => ProductModel.fromJson(e)).toList();
     }
 
     return [];
   }
-
-  Future <ProductModel?> getProductoUnico(int id) async{
-    final respuesta = await _dio.get('$productConst/$id');
-    if (respuesta.statusCode == 200) {
-      final data = respuesta.data;
-      return ProductModel.fromJson(data);
-    }
-    return null;
-  }
-
-
 }

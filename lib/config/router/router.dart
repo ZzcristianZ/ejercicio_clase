@@ -1,7 +1,6 @@
 import 'package:ejercicio_clase/config/router/router_config.dart';
 import 'package:ejercicio_clase/model/product_model.dart';
 import 'package:ejercicio_clase/screen/details/detalis_screen.dart';
-import 'package:ejercicio_clase/producto/product_detail_screen.dart';
 import 'package:ejercicio_clase/screen/home/home_screen.dart';
 import 'package:ejercicio_clase/screen/shared/layout.dart';
 import 'package:go_router/go_router.dart';
@@ -29,14 +28,6 @@ final GoRouter router = GoRouter(
         ),
       ],
     ),
-    GoRoute(
-      name: 'product_detail',
-      path: '/product/:id',
-      builder: (context, state) {
-        int id = int.parse( state.pathParameters['id']! );
-        return ProductDetailScreen(id: id);
-      },
-    )
   ],
 
   errorBuilder: (context, state) => HomeScreen(),
