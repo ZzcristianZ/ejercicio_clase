@@ -3,6 +3,7 @@ import 'package:ejercicio_clase/screen/home/home_screen.dart';
 import 'package:ejercicio_clase/screen/character/characters_screen.dart';
 
 List<RouterModel> routerConfig = [
+
   RouterModel(
     name: "Home",
     title: "Home",
@@ -18,3 +19,4 @@ List<RouterModel> routerConfig = [
     widget: (context, state) => const CharactersScreen(),
   ),
 ];
+
