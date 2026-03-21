@@ -26,7 +26,7 @@ class ProductModel {
       status: json["status"] ?? "no hay estado",
       species: json["species"] ?? "no hay specie",
       gender: json["gender"] ?? "no hay gender",
-      origin: (json["origin"]?["name"] ?? "Unknown").toString(),
+      origin: json["origin"]?["name"] ?? "Unknown",
       image: json["image"] ?? "",
     );
   }

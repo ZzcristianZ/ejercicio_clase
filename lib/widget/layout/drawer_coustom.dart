@@ -15,14 +15,11 @@ class DrawerCoustom extends StatelessWidget {
               title: Text(route.title),
               subtitle: Text(route.description),
               trailing: const Icon(Icons.keyboard_arrow_right_rounded),
-
               onTap: () {
                 Navigator.pop(context); 
-
                 if (Navigator.canPop(context)) {
                   Navigator.pop(context); 
                 }
-
                 context.go(route.patch);
               },
             );

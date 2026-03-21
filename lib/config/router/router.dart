@@ -1,8 +1,6 @@
 import 'package:ejercicio_clase/config/router/router_config.dart';
 import 'package:ejercicio_clase/model/product_model.dart';
-import 'package:ejercicio_clase/screen/details/detalis_screen.dart';
-import 'package:ejercicio_clase/screen/home/home_screen.dart';
-import 'package:ejercicio_clase/screen/shared/layout.dart';
+import 'package:ejercicio_clase/screen/screens.dart';
 import 'package:go_router/go_router.dart';
 
 final GoRouter router = GoRouter(

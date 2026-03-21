@@ -32,7 +32,6 @@ class _CharactersScreenState extends State<CharactersScreen> {
       itemCount: products.length,
       itemBuilder: (context, index) {
         final character = products[index];
-
         return ListTile(
           leading: CircleAvatar(backgroundImage: NetworkImage(character.image)),
           title: Text(character.name),

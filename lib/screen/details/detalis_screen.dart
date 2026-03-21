@@ -37,7 +37,7 @@ class DetailScreen extends StatelessWidget {
             ),
             const SizedBox(height: 20),
             Card(
-              elevation: 3,
+              elevation: 5,
               child: Padding(
                 padding: const EdgeInsets.all(16),
                 child: Column(
